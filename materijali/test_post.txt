@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				width: 800px;
+				margin: 20px auto;
+			}
+			
+			form div {
+
+				margin: 10px 0;
+
+			}
+
+			form div strong {
+				display: inline-block;
+				width: 200px;
+				padding-right: 10px;
+				text-align: right;			
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Prijavi se na kurs</h1>
+		<form>
+			
+			<div>
+				<strong>Ime</strong>
+				<input type="text" name="first_name">
+			</div>
+			
+			<div>
+				<strong>Prezime</strong>
+				<input type="text" name="last_name">
+			</div>
+			
+			<div>
+				<strong>Pol</strong>
+				<label>
+					<input type="radio" value="Z" name="gender"> Zenski				
+				</label>
+				<label>
+					<input type="radio" value="M" name="gender"> Muski				
+				</label>
+			</div>
+
+			<div>
+				<strong>Kurs</strong>
+				<select name="course">
+					<option value="">--Izaberi---</option>
+					<option value="php">PHP</option>
+					<option value="html_and_css">HTML &amp; CSS</option>
+					<option value="qa">Quality Assurance</option>
+				</select>
+			</div>
+
+			<div>
+				<strong>Termini koji odgovaraju</strong>
+				<label>
+					<input type="checkbox" value="9h"> 09h-12h				
+				</label>
+				<label>
+					<input type="checkbox" value="13h"> 13h-16h				
+				</label>
+				<label>
+					<input type="checkbox" value="17h"> 17h-20h				
+				</label>
+			</div>
+
+			<div>
+				<hr>
+				<button type="submit">Prijavi se</button>
+			</div>
+		</form>
+	<body>
+</html>
